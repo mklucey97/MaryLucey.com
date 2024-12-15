@@ -1,0 +1,20 @@
+## Unignore the .gitignore file
+!.gitignore
+
+## Unignore specific directories
+!css/
+!images/
+!js/
+!assets/
+
+## Unignore specific file extensions
+!*.html
+!*.css
+!*.js
+!*.php
+!*.jpg
+!*.gif
+!*.png
+
+## Unignore specific files
+!assets/jquery.min.js
