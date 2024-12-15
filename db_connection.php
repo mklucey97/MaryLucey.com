@@ -2,5 +2,8 @@
 $servername = "fdb1032.awardspace.net”;
 $username = "4413656_chatapp";
 $password = “PFct,ap#8e_p!Ci9”;
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+
 
 ?>
