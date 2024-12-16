@@ -4,6 +4,9 @@ $username = "4413656_chatapp";
 $password = “PFct,ap#8e_p!Ci9”;
 $conn = mysqli_connect($servername, $username, $password, $database);
 
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 
 
 ?>
