@@ -87,8 +87,13 @@ body {
 }
 h2 {
     margin-bottom: 20px; /* Spacing below the heading */
-	 font-family: 'Comic Sans MS', cursive, sans-serif;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 24px;
     color: limegreen;
 	text-align: center;
+}
+form {
+    width: 100%; /* Full width for the form */
+    max-width: 400px; /* Limit max width for larger screens */
+    text-align: center; /* Center align form elements */
 }
