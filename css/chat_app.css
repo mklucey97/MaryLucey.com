@@ -101,3 +101,12 @@ label {
     display: block; /* Block display for labels */
     margin-bottom: 5px; /* Space between label and input */
 }
+input {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 15px; /* Space below input fields */
+    background-color: #dc143c; /* Background color for input fields */
+    border: none; /* Remove default border */
+    color: white; /* Text color in input fields */
+    font-size: 18px; /* Font size in input fields */
+}
