@@ -110,3 +110,13 @@ input {
     color: white; /* Text color in input fields */
     font-size: 18px; /* Font size in input fields */
 }
+button {
+    width: 100%; /* Full width for the button */
+    padding: 10px; /* Padding inside button */
+    background-color: #2786c2; /* Background color for button */
+    border: none; /* Remove default border */
+    color: white; /* Text color in button */
+    font-size: 18px; /* Font size in button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
