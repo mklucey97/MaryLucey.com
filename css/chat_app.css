@@ -41,3 +41,14 @@ input {
 input::placeholder {
     color: #f5c2c2;
 }
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2786c2;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
