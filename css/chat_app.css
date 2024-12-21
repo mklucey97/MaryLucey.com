@@ -1,9 +1,16 @@
+/* Reset some default styles */
+body, h2, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* General styles */
 body {
     font-family: 'Comic Sans MS', sans-serif;
     font-size: 24px;
     color: limegreen;
-    background: linear-gradient(0deg, red 50%, blue 50%);
+    background: linear-gradient(red 100%, blue 50%);
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,9 +19,11 @@ body {
     height: 100vh;
     text-align: center;
 }
+
 h2 {
     margin-bottom: 20px;
 }
+
 form {
     width: 90%;
     max-width: 400px;
@@ -23,105 +32,53 @@ form {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 label {
     display: block;
     margin-bottom: 5px;
     text-align: left;
 }
+
 input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 2px solid limegreen;
     border-radius: 4px;
-    background-color: #dc143c;
-    color: cyan;
+    background-color: #dc143c; /* Input field background color */
+    color: cyan; /* Input field text color */
     font-size: 18px;
 }
+
 input::placeholder {
-    color: #f5c2c2;
+    color: #f5c2c2; /* Placeholder text color */
 }
+
 button {
     width: 100%;
     padding: 10px;
-    background-color: #2786c2;
-    color: white;
+    background-color: #2786c2; /* Button background color */
+    color: white; /* Button text color */
     font-size: 18px;
-    border: none;
+    border: none; /* Remove default border */
     border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
+
 button:hover {
-    background-color: #1a5b87;
+    background-color: #1a5b87; /* Darken button on hover */
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
     body {
-        padding: 10px;
+        padding: 10px; /* Padding for smaller screens */
     }
 
     form {
-        padding: 15px;
+        padding: 15px; /* Padding for form on smaller screens */
     }
-}
-/* Reset some default styles */
-body, h2, label, input, button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* Mobile-first styles */
-body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 24px;
-    color: limegreen;
-    background: linear-gradient(0deg, red 100%, blue 50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full height of the viewport */
-    padding: 20px;
-}
-h2 {
-    margin-bottom: 20px; /* Spacing below the heading */
-	font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 24px;
-    color: limegreen;
-	text-align: center;
-}
-form {
-    width: 100%; /* Full width for the form */
-    max-width: 400px; /* Limit max width for larger screens */
-    text-align: center; /* Center align form elements */
-}
-label {
-    display: block; /* Block display for labels */
-    margin-bottom: 5px; /* Space between label and input */
-}
-input {
-    width: 100%; /* Full width for input fields */
-    padding: 10px; /* Padding inside input fields */
-    margin-bottom: 15px; /* Space below input fields */
-    background-color: #dc143c; /* Background color for input fields */
-    border: none; /* Remove default border */
-    color: white; /* Text color in input fields */
-    font-size: 18px; /* Font size in input fields */
-}
-button {
-    width: 100%; /* Full width for the button */
-    padding: 10px; /* Padding inside button */
-    background-color: #2786c2; /* Background color for button */
-    border: none; /* Remove default border */
-    color: white; /* Text color in button */
-    font-size: 18px; /* Font size in button */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-button:hover {
-    background-color: #1f6a9b; /* Darken button on hover */
 }
 
 /* Media queries for larger screens */
