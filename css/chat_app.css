@@ -28,3 +28,13 @@ label {
     margin-bottom: 5px;
     text-align: left;
 }
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid limegreen;
+    border-radius: 4px;
+    background-color: #dc143c;
+    color: cyan;
+    font-size: 18px;
+}
