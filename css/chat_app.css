@@ -38,3 +38,6 @@ input {
     color: cyan;
     font-size: 18px;
 }
+input::placeholder {
+    color: #f5c2c2;
+}
