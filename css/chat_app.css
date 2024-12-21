@@ -120,3 +120,16 @@ button {
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
+button:hover {
+    background-color: #1f6a9b; /* Darken button on hover */
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    body {
+        font-size: 28px; /* Increase font size on larger screens */
+    }
+    input, button {
+        font-size: 20px; /* Increase font size for input/button on larger screens */
+    }
+}
