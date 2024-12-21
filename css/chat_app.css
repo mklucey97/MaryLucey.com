@@ -85,3 +85,6 @@ body {
     height: 100vh; /* Full height of the viewport */
     padding: 20px;
 }
+h2 {
+    margin-bottom: 20px; /* Spacing below the heading */
+}
