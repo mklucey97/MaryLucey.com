@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, h2, label, input, button {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,9 +10,7 @@ body {
     font-family: 'Comic Sans MS', sans-serif;
     font-size: 24px;
     color: limegreen;
-    background: linear-gradient(red 100%, blue 50%);
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(red 50%, blue 50%);
     display: flex;
     justify-content: center;
     align-items: center;
