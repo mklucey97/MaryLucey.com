@@ -97,3 +97,7 @@ form {
     max-width: 400px; /* Limit max width for larger screens */
     text-align: center; /* Center align form elements */
 }
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space between label and input */
+}
