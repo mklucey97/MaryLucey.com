@@ -315,3 +315,12 @@ h1 {
     font-size: 24px; /* Ensure button text is visible */
     cursor: pointer; /* Pointer cursor on hover */
 }
+/* Scrollbar styles */
+#onlineUsers::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+#onlineUsers::-webkit-scrollbar-thumb {
+    background-color: cyan; /* Scrollbar color */
+    border-radius: 6px; /* Rounded corners */
+}
