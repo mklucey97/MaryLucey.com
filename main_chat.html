@@ -10,3 +10,19 @@
 	<link rel="stylesheet" href="css/chat_app.css">
 	<h1>Main Chat Room</h1>
 </head>
+<body>
+    <div id="welcome"></div>
+    <div id="onlineUsers"></div>
+
+    <div id="messageArea">
+        <!-- Chat window for displaying messages -->
+        <div id="chatWindow">
+            <!-- Messages will be displayed here -->
+        </div>
+
+        <!-- Message input area -->
+        <form id="mainChatArea" action="main_chat.php" method="post">
+            <textarea id="messageInput" rows="4" placeholder="Type your message here" maxlength="50000000000000"></textarea>
+            <button id="sendBtn" type="submit">Send</button>
+        </form>
+    </div>
