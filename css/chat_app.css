@@ -137,3 +137,14 @@ input {
 input::placeholder {
     color: #f5c2c2; /* Placeholder text color */
 }
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2786c2; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 18px;
+    border: none; /* Remove default border */
+    border-radius: 4px;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
