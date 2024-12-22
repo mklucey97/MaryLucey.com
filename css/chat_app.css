@@ -148,3 +148,6 @@ button {
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s ease; /* Smooth transition */
 }
+button:hover {
+    background-color: #1a5b87; /* Darken button on hover */
+}
