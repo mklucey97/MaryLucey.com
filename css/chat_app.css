@@ -88,3 +88,9 @@ button:hover {
         font-size: 20px; /* Increase font size for input/button on larger screens */
     }
 }
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
