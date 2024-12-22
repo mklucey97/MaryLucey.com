@@ -7,26 +7,32 @@
     <meta name="description" content="Your Description Here">
     <meta name="author" content="Your Name Here">
     <title>Main Chat</title>
-	<link rel="stylesheet" href="css/chat_app.css">
-	<h1>Main Chat Room</h1>
+    <link rel="stylesheet" href="css/chat_app.css">
 </head>
 <body>
+    <h1>Main Chat Room</h1>
     <div id="welcome"></div>
-    <div id="onlineUsers"></div>
+    
+    <!-- Chat window for displaying messages -->
+    <div id="chatWindow">
+        <!-- Messages will be displayed here -->
+    </div>
 
+    <!-- Online users list -->
+    <div id="onlineUsers">
+        <h2>Online Users</h2>
+        <!-- Usernames will be displayed here -->
+    </div>
+
+    <!-- Message area and send button -->
     <div id="messageArea">
-        <!-- Chat window for displaying messages -->
-        <div id="chatWindow">
-            <!-- Messages will be displayed here -->
-        </div>
-
-        <!-- Message input area -->
         <form id="mainChatArea" action="main_chat.php" method="post">
-            <textarea id="messageInput" rows="4" placeholder="Type your message here" maxlength="50000000000000"></textarea>
+            <textarea id="messageInput" rows="4" placeholder="Type your message here" maxlength="500"></textarea>
             <button id="sendBtn" type="submit">Send</button>
         </form>
     </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main_chat.js"></script>
 </body>
 </html>
