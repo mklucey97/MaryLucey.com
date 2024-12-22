@@ -94,3 +94,16 @@ button:hover {
     padding: 0;
     box-sizing: border-box;
 }
+
+/* General styles */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 24px;
+    color: limegreen;
+    background: linear-gradient(red 50%, blue 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
