@@ -282,3 +282,11 @@ h1 {
     overflow-y: auto; /* Enable scrolling */
     padding: 10px; /* Add some padding */
 }
+/* Online users list styles */
+#onlineUsers {
+    background-color: #dc143c;
+    height: 150px; /* Set a fixed height for the online users area */
+    overflow-y: auto; /* Enable scrolling */
+    margin: 10px 0; /* Add margin for spacing */
+    padding: 10px; /* Add some padding */
+}
