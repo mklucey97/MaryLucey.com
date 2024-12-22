@@ -269,3 +269,9 @@ body {
     flex-direction: column;
     height: 100vh; /* Full viewport height */
 }
+
+/* Header styles */
+h1 {
+    text-align: center;
+    color: limegreen;
+}
