@@ -290,3 +290,10 @@ h1 {
     margin: 10px 0; /* Add margin for spacing */
     padding: 10px; /* Add some padding */
 }
+/* Message area styles */
+#messageArea {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column;
+    background-color: #dc143c;
+    padding: 10px; /* Add padding */
+}
