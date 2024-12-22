@@ -259,3 +259,13 @@ body, h1, textarea, button {
     padding: 0;
     box-sizing: border-box;
 }
+/* Body styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    color: limegreen;
+    background: linear-gradient(180deg, red 100%, blue 50%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
