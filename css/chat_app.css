@@ -305,3 +305,13 @@ h1 {
     resize: none; /* Disable resizing */
     border: 2px solid cyan; /* Cyan border */
 }
+
+/* Button styles */
+#sendBtn {
+    width: 100%; /* Full width */
+    background-color: cyan; /* Button color */
+    border: none; /* Remove default border */
+    padding: 15px; /* Add padding */
+    font-size: 24px; /* Ensure button text is visible */
+    cursor: pointer; /* Pointer cursor on hover */
+}
