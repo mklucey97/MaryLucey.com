@@ -3,35 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Your Key Words Here">
-    <meta name="description" content="Your Description Here">
-    <meta name="author" content="Your Name Here">
     <title>Main Chat</title>
     <link rel="stylesheet" href="css/chat_app.css">
 </head>
 <body>
     <h1>Main Chat Room</h1>
-    <div id="welcome"></div>
-    
-    <!-- Chat window for displaying messages -->
-    <div id="chatWindow">
-        <!-- Messages will be displayed here -->
+
+    <div id="mainContent">
+        <!-- Online users list -->
+        <div id="onlineUsers">
+            <h2>Online Users</h2>
+            <!-- Usernames will be displayed here -->
+        </div>
+
+        <div id="chatContainer">
+            <!-- Chat window -->
+            <div id="chatWindow"></div>
+
+            <!-- Message area -->
+            <div id="messageArea">
+                <form id="mainChatArea" action="main_chat.php" method="post">
+                    <textarea id="messageInput" rows="4" placeholder="Type your message here" maxlength="500000000"></textarea>
+                    <button id="sendBtn" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <!-- Online users list -->
-    <div id="onlineUsers">
-        <h2>Online Users</h2>
-        <!-- Usernames will be displayed here -->
-    </div>
-
-    <!-- Message area and send button -->
-    <div id="messageArea">
-        <form id="mainChatArea" action="main_chat.php" method="post">
-            <textarea id="messageInput" rows="4" placeholder="Type your message here" maxlength="500"></textarea>
-            <button id="sendBtn" type="submit">Send</button>
-        </form>
-    </div>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main_chat.js"></script>
 </body>
