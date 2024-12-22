@@ -171,166 +171,104 @@ button:hover {
         font-size: 20px; /* Increase font size for input/button on larger screens */
     }
 }
-/* Reset some default styles */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* General styles */
+
 body {
     font-family: 'Comic Sans MS', sans-serif;
-    font-size: 24px;
-    color: limegreen;
-    background: linear-gradient(red 50%, blue 50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-}
-h2 {
-    margin-bottom: 20px;
-}
-
-form {
-    width: 90%;
-    max-width: 400px;
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    text-align: left;
-}
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 2px solid limegreen;
-    border-radius: 4px;
-    background-color: #dc143c; /* Input field background color */
-    color: cyan; /* Input field text color */
-    font-size: 18px;
-}
-input::placeholder {
-    color: #f5c2c2; /* Placeholder text color */
-}
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #2786c2; /* Button background color */
-    color: white; /* Button text color */
-    font-size: 18px;
-    border: none; /* Remove default border */
-    border-radius: 4px;
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-button:hover {
-    background-color: #1a5b87; /* Darken button on hover */
-}
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    body {
-        padding: 10px; /* Padding for smaller screens */
-    }
-
-    form {
-        padding: 15px; /* Padding for form on smaller screens */
-    }
-}
-/* Media queries for larger screens */
-@media (min-width: 768px) {
-    body {
-        font-size: 28px; /* Increase font size on larger screens */
-    }
-    input, button {
-        font-size: 20px; /* Increase font size for input/button on larger screens */
-    }
-}
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* General styles */
-body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 24px;
-    color: limegreen;
     background: linear-gradient(180deg, #dc143c 50%, blue 50%);
+    height: 100vh;
+    color: limegreen;
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Full viewport height */
+    align-items: center;
     text-align: center;
 }
 
 h1 {
-    margin: 20px 0; /* Space around the header */
+    margin: 20px 0;
 }
 
-/* Chat window styles */
-#chatWindow {
-    background-color: #dc143c;
-    flex: 1; /* Take up all available space */
-    overflow-y: auto; /* Enable scrolling */
-    padding: 10px; /* Add some padding */
+/* Main layout */
+#mainContent {
+    display: flex;
+    width: 100%;
+    height: 90%;
 }
 
-/* Online users list styles */
+/* Online users list */
 #onlineUsers {
     background-color: #dc143c;
-    height: 150px; /* Set a fixed height for the online users area */
-    overflow-y: auto; /* Enable scrolling */
-    margin: 10px 0; /* Add margin for spacing */
-    padding: 10px; /* Add some padding */
+    width: 20%;
+    padding: 10px;
+    color: limegreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid limegreen;
 }
 
 #onlineUsers h2 {
-    color: limegreen; /* Heading color */
-    font-size: 24px; /* Heading font size */
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-/* Message area styles */
-#messageArea {
-    display: flex; /* Use flexbox for layout */
+/* Chat container */
+#chatContainer {
+    flex: 1;
+    display: flex;
     flex-direction: column;
+}
+
+/* Chat window */
+#chatWindow {
+    flex: 1;
     background-color: #dc143c;
-    padding: 10px; /* Add padding */
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 2px solid limegreen;
 }
 
-/* Textarea styles */
+/* Message area */
+#messageArea {
+    background-color: #dc143c;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
 #messageInput {
-    width: 100%; /* Full width */
-    height: 100px; /* Fixed height for typing space */
-    margin-bottom: 10px; /* Space between textarea and button */
-    resize: none; /* Disable resizing */
-    border: 2px solid cyan; /* Cyan border */
+    width: 100%;
+    height: 100px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: cyan;
+    background-color: #dc143c;
 }
 
-/* Button styles */
+#messageInput::placeholder {
+    color: #f5c2c2;
+}
+
 #sendBtn {
-    width: 100%; /* Full width */
-    background-color: cyan; /* Button color */
-    border: none; /* Remove default border */
-    padding: 15px; /* Add padding */
-    font-size: 24px; /* Ensure button text is visible */
-    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    background-color: cyan;
+    color: #dc143c;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Scrollbar styles */
-#onlineUsers::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
-}
-
-#onlineUsers::-webkit-scrollbar-thumb {
-    background-color: cyan; /* Scrollbar color */
-    border-radius: 6px; /* Rounded corners */
+#sendBtn:hover {
+    background-color: #00ced1;
 }
