@@ -275,3 +275,10 @@ h1 {
     text-align: center;
     color: limegreen;
 }
+/* Chat window styles */
+#chatWindow {
+    background-color: #dc143c;
+    flex: 1; /* Take up all available space */
+    overflow-y: auto; /* Enable scrolling */
+    padding: 10px; /* Add some padding */
+}
