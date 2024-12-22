@@ -151,3 +151,23 @@ button {
 button:hover {
     background-color: #1a5b87; /* Darken button on hover */
 }
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Padding for smaller screens */
+    }
+
+    form {
+        padding: 15px; /* Padding for form on smaller screens */
+    }
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    body {
+        font-size: 28px; /* Increase font size on larger screens */
+    }
+    input, button {
+        font-size: 20px; /* Increase font size for input/button on larger screens */
+    }
+}
