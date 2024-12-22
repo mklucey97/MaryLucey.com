@@ -134,3 +134,6 @@ input {
     color: cyan; /* Input field text color */
     font-size: 18px;
 }
+input::placeholder {
+    color: #f5c2c2; /* Placeholder text color */
+}
