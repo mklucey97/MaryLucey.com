@@ -254,27 +254,28 @@ button:hover {
     }
 }
 /* Reset some default styles */
-body, h1, textarea, button {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Body styles */
+
+/* General styles */
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 24px;
     color: limegreen;
-    background: linear-gradient(180deg, red 100%, blue 50%);
+    background: linear-gradient(180deg, #dc143c 50%, blue 50%);
     display: flex;
     flex-direction: column;
     height: 100vh; /* Full viewport height */
+    text-align: center;
 }
 
-/* Header styles */
 h1 {
-    text-align: center;
-    color: limegreen;
+    margin: 20px 0; /* Space around the header */
 }
+
 /* Chat window styles */
 #chatWindow {
     background-color: #dc143c;
@@ -282,6 +283,7 @@ h1 {
     overflow-y: auto; /* Enable scrolling */
     padding: 10px; /* Add some padding */
 }
+
 /* Online users list styles */
 #onlineUsers {
     background-color: #dc143c;
@@ -290,6 +292,12 @@ h1 {
     margin: 10px 0; /* Add margin for spacing */
     padding: 10px; /* Add some padding */
 }
+
+#onlineUsers h2 {
+    color: limegreen; /* Heading color */
+    font-size: 24px; /* Heading font size */
+}
+
 /* Message area styles */
 #messageArea {
     display: flex; /* Use flexbox for layout */
@@ -297,6 +305,7 @@ h1 {
     background-color: #dc143c;
     padding: 10px; /* Add padding */
 }
+
 /* Textarea styles */
 #messageInput {
     width: 100%; /* Full width */
@@ -315,6 +324,7 @@ h1 {
     font-size: 24px; /* Ensure button text is visible */
     cursor: pointer; /* Pointer cursor on hover */
 }
+
 /* Scrollbar styles */
 #onlineUsers::-webkit-scrollbar {
     width: 12px; /* Width of the scrollbar */
