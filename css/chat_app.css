@@ -242,30 +242,30 @@ h1 {
 #messageArea {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: #dc143c;
     width: 100%;
     height: 15%;
-    padding: 0; /* Remove extra padding to utilize full space */
     box-sizing: border-box;
+    padding: 0; /* Utilize full space without extra padding */
 }
 
 #mainChatArea {
     display: flex;
+    flex-grow: 1;
     width: 100%;
     margin: 0;
 }
 
 #messageInput {
-    flex: 1; /* Occupy all available space except for the button */
+    flex-grow: 1; /* Takes up all remaining space */
     height: 100%;
     border: 2px solid cyan;
-    border-radius: 0;
     padding: 10px;
     font-size: 18px;
     color: cyan;
     background-color: #dc143c;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Includes padding and border in dimensions */
+    border-radius: 0;
 }
 
 #messageInput::placeholder {
@@ -273,11 +273,10 @@ h1 {
 }
 
 #sendBtn {
-    flex-shrink: 0; /* Prevent shrinking of the button */
-    width: 20%; /* Adjusted width for a larger button */
+    flex: 0 0 25%; /* Fixed width of 25% of message area */
     height: 100%;
-    font-size: 24px; /* Larger font size */
-    padding: 10px;
+    font-size: 24px; /* Increased font size for visibility */
+    padding: 10px; /* Padding for proper text alignment */
     background-color: cyan;
     color: #dc143c;
     border: none;
@@ -291,4 +290,15 @@ h1 {
 
 #sendBtn:hover {
     background-color: #00ced1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #sendBtn {
+        flex: 0 0 30%; /* Larger button width for smaller screens */
+    }
+
+    #messageInput {
+        font-size: 16px; /* Slightly smaller font for compactness */
+    }
 }
