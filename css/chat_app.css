@@ -171,6 +171,13 @@ button:hover {
         font-size: 20px; /* Increase font size for input/button on larger screens */
     }
 }
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* General styles */
 body {
     font-family: 'Comic Sans MS', sans-serif;
@@ -239,6 +246,8 @@ h1 {
     background-color: #dc143c;
     width: 100%;
     height: 15%;
+    padding: 0 10px; /* Add horizontal padding */
+    box-sizing: border-box;
 }
 
 #mainChatArea {
@@ -251,7 +260,7 @@ h1 {
     flex: 1;
     height: 100%;
     border: 2px solid cyan;
-    border-radius: 0; /* Remove rounding */
+    border-radius: 0;
     padding: 10px;
     font-size: 18px;
     color: cyan;
@@ -263,15 +272,19 @@ h1 {
 }
 
 #sendBtn {
-    width: 15%;
+    width: 20%; /* Increased width for larger button */
     height: 100%;
     font-size: 24px;
+    padding: 10px; /* Ensure padding for text inside button */
     background-color: cyan;
     color: #dc143c;
     border: none;
-    border-radius: 0; /* Remove rounding */
+    border-radius: 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #sendBtn:hover {
