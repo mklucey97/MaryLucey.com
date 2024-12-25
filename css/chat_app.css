@@ -195,51 +195,37 @@ h1 {
     text-align: center;
 }
 
-/* Main layout */
+/* Layout */
 #mainContent {
     display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100%;
 }
 
-/* Online users list */
+/* Online users */
 #onlineUsers {
     background-color: #dc143c;
     width: 20%;
-    padding: 10px;
     color: limegreen;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
     border-right: 2px solid limegreen;
     height: 100%;
-    position: fixed;
-    left: 0;
 }
 
-/* General styles */
-body {
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 24px;
-    color: limegreen;
-    background: linear-gradient(red 50%, blue 50%);
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-}
-
+/* Chat container */
 #chatContainer {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%; /* Remaining space */
     height: 100%;
 }
 
 /* Chat window */
 #chatWindow {
-    flex: 1;
+    flex-grow: 1;
     background-color: #3273a8;
     overflow-y: auto;
     padding: 20px;
@@ -251,30 +237,28 @@ body {
 /* Message area */
 #messageArea {
     display: flex;
-    background-color: #dc143c;
     width: 100%;
-    height: auto; /* Adjusts to fit content */
-    padding: 0; /* Remove extra padding */
-    box-sizing: border-box; /* Includes padding in dimensions */
+    background-color: #dc143c;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    height: auto;
 }
 
 #mainChatArea {
     display: flex;
-    flex-grow: 1;
-    margin: 0;
-    width: 100%;
+    flex: 1;
+    align-items: center;
 }
 
 #messageInput {
-    flex-grow: 1;
-    height: auto; /* Adjusts to content */
+    flex: 1; /* Takes all available space */
     padding: 10px;
     font-size: 18px;
     color: cyan;
     background-color: #dc143c;
     border: 2px solid cyan;
-    border-radius: 0;
-    box-sizing: border-box;
+    border-radius: 4px 0 0 4px;
 }
 
 #messageInput::placeholder {
@@ -282,17 +266,31 @@ body {
 }
 
 #sendBtn {
-    width: auto;
-    padding: 10px 20px;
-    font-size: 24px;
     background-color: cyan;
     color: #dc143c;
     border: none;
-    border-radius: 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 0 4px 4px 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 #sendBtn:hover {
     background-color: #00ced1;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 600px) {
+    #onlineUsers {
+        display: none; /* Hide online users for smaller screens */
+    }
+
+    #chatContainer {
+        width: 100%;
+    }
+
+    #sendBtn {
+        font-size: 16px;
+    }
 }
