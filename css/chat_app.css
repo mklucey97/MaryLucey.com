@@ -346,3 +346,14 @@ textarea {
     padding: 10px;
     resize: none;
 }
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
