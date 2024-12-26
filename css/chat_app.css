@@ -333,3 +333,8 @@ body, html {
     padding: 10px;
     overflow-y: auto;
 }
+/* Label and textarea */
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
