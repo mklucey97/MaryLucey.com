@@ -326,3 +326,10 @@ body, html {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+/* Chat messages container */
+#chat-messages {
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: auto;
+}
