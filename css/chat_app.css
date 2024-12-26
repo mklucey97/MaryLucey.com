@@ -357,3 +357,7 @@ textarea {
     border-radius: 5px;
     cursor: pointer;
 }
+#send-button {
+    background-color: #31bceb;
+    color: white;
+}
