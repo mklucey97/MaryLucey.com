@@ -307,7 +307,6 @@ h1 {
     padding: 0;
     box-sizing: border-box;
 }
-
 /* General styles */
 body {
     font-family: 'Comic Sans MS', sans-serif;
@@ -315,9 +314,18 @@ body {
     color: limegreen;
     background: linear-gradient(red 50%, blue 50%);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     height: 100vh;
+    text-align: center;
+}
+
+/* Header */
+header h1 {
+    margin: 20px 0;
+    font-size: 32px;
+    color: limegreen;
     text-align: center;
 }
 
@@ -325,15 +333,16 @@ body {
 .chat-popup {
     width: 90%;
     max-width: 800px;
-    background-color: transparent; /* Removed cyan background */
+    background-color: #dc143c; /* Updated background color */
     border-radius: 10px;
     padding: 15px;
     text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Chat messages container */
 #chat-messages {
-    background-color: transparent; /* Removed red background for better visibility */
+    background-color: #dc143c; /* Updated background color */
     border-radius: 5px;
     padding: 10px;
     overflow-y: auto;
@@ -356,7 +365,7 @@ textarea {
     border-radius: 5px;
     padding: 10px;
     resize: none;
-    background-color: transparent; /* Removed background color */
+    background-color: #dc143c; /* Updated background color */
     color: limegreen; /* Ensure text is visible */
 }
 
