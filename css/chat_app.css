@@ -361,3 +361,31 @@ textarea {
     background-color: #31bceb;
     color: white;
 }
+.cancel {
+    background-color: crimson;
+    color: white;
+}
+/* Link styling */
+a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: limegreen;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .chat-popup {
+        width: 60%;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+}
