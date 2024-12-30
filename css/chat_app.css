@@ -307,12 +307,13 @@ h1 {
     padding: 0;
     box-sizing: border-box;
 }
+
 /* General styles */
 body {
     font-family: 'Comic Sans MS', sans-serif;
     font-size: 24px;
     color: limegreen;
-    background: linear-gradient(red 50%, blue 50%);
+    background-color: cyan; /* Updated background color for surrounding area */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,7 +334,7 @@ header h1 {
 .chat-popup {
     width: 90%;
     max-width: 800px;
-    background-color: #dc143c; /* Updated background color */
+    background-color: #dc143c; /* Chat window background color */
     border-radius: 10px;
     padding: 15px;
     text-align: center;
@@ -342,7 +343,7 @@ header h1 {
 
 /* Chat messages container */
 #chat-messages {
-    background-color: #dc143c; /* Updated background color */
+    background-color: #dc143c; /* Chat message area background color */
     border-radius: 5px;
     padding: 10px;
     overflow-y: auto;
@@ -365,7 +366,7 @@ textarea {
     border-radius: 5px;
     padding: 10px;
     resize: none;
-    background-color: #dc143c; /* Updated background color */
+    background-color: #dc143c; /* Message input area background color */
     color: limegreen; /* Ensure text is visible */
 }
 
