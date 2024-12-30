@@ -325,22 +325,22 @@ body {
 .chat-popup {
     width: 90%;
     max-width: 800px;
-    background-color: cyan;
+    background-color: transparent; /* Removed cyan background */
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 /* Chat messages container */
 #chat-messages {
-    background-color: red;
+    background-color: transparent; /* Removed red background for better visibility */
     border-radius: 5px;
     padding: 10px;
     overflow-y: auto;
     height: 600px; /* Increased height for storing many messages */
     border: 1px solid limegreen;
     margin-bottom: 10px;
+    color: limegreen; /* Ensure text inside messages is visible */
 }
 
 /* Label and textarea */
@@ -356,6 +356,8 @@ textarea {
     border-radius: 5px;
     padding: 10px;
     resize: none;
+    background-color: transparent; /* Removed background color */
+    color: limegreen; /* Ensure text is visible */
 }
 
 /* Buttons */
