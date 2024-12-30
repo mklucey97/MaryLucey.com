@@ -308,12 +308,12 @@ h1 {
     box-sizing: border-box;
 }
 
-/* General styles */
+/* General body styles */
 body {
     font-family: 'Comic Sans MS', sans-serif;
     font-size: 24px;
     color: limegreen;
-    background-color: cyan; /* Updated background color for surrounding area */
+    background-color: cyan; /* Surrounding area background color set to cyan */
     display: flex;
     flex-direction: column;
     align-items: center;
