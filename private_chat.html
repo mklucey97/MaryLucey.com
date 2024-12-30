@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="keywords" content="Your Key Words Here">
+    <meta name="keywords" content="Your Key Words Here">
     <meta name="description" content="Your Description Here">
     <meta name="author" content="Your Name Here">
-   <title>Private Chat</title>
+    <title>Private Chat</title>
     <link rel="stylesheet" href="css/chat_app.css">
 </head>
 <body>
 <div class="chat-popup" id="myForm">
   <form class="form-container">
     <h1>Private Chat</h1>
-    <div id="chat-messages" style="height: 200px; overflow-y: auto; border: 1px solid #ccc; margin-bottom: 10px;">
+    <div id="chat-messages">
       <!-- Recent messages will be displayed here -->
     </div>
- <label for="msg"><b>Message</b></label>
+    <label for="msg"><b>Message</b></label>
     <textarea id="message" placeholder="Type message..." required></textarea>
     <button type="button" id="send-button" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
 <a href="main_chat.html">Rather chat with more than one person?</a>
