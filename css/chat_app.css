@@ -427,3 +427,10 @@ body {
 .container {
     padding: 20px;
 }
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
