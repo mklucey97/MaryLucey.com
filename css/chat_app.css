@@ -411,3 +411,13 @@ a {
         font-size: 20px;
     }
 }
+/* General styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    color: limegreen;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(100%, red, blue);
+    text-align: center;
+}
