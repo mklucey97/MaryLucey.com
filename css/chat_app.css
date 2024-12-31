@@ -463,3 +463,11 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #05283b;
 }
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    input[type="text"],
+    input[type="file"] {
+        width: 50%;
+    }
+}
