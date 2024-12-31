@@ -421,3 +421,9 @@ body {
     background: linear-gradient(100%, red, blue);
     text-align: center;
 }
+
+
+/* Container styles */
+.container {
+    padding: 20px;
+}
