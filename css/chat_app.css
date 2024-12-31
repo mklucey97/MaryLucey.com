@@ -450,3 +450,12 @@ input[type="file"] {
     width: 80%;
     box-sizing: border-box;
 }
+/* Submit button */
+input[type="submit"] {
+    background-color: #06324f;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
