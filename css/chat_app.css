@@ -439,3 +439,14 @@ form {
 label {
     margin: 10px 0;
 }
+/* Input fields */
+input[type="text"],
+input[type="file"] {
+    background-color: #dc143c;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    box-sizing: border-box;
+}
