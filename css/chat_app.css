@@ -541,5 +541,8 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    margin-bottom: 20px;
+}
 
 
