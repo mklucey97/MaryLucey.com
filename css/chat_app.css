@@ -519,4 +519,21 @@ input[type="submit"]:hover {
     }
 }
 
+/* chat_app.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 24px;
+    background: linear-gradient(to bottom, red 50%, blue 50%);
+    color: limegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
 
