@@ -552,5 +552,10 @@ form {
     align-items: center;
     width: 100%;
 }
+label {
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+}
 
 
