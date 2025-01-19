@@ -575,4 +575,8 @@ select {
     outline: none;
 }
 
+textarea {
+    resize: vertical;
+}
+
 
