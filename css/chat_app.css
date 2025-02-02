@@ -579,4 +579,9 @@ textarea {
     resize: vertical;
 }
 
+input[type="file"] {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
 
