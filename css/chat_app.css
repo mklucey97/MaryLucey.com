@@ -585,3 +585,16 @@ input[type="file"] {
 }
 
 
+input[type="submit"] {
+    background-color: #074170;
+    color: limegreen;
+    font-size: 24px;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
