@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
- <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="Your Key Words Here">
-<meta name="description" content="Your Description Here">
-  <meta name="author" content="Your Name Here">
-   <link rel="stylesheet" href="css/chat_app.css">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Your Key Words Here">
+    <meta name="description" content="Your Description Here">
+    <meta name="author" content="Your Name Here">
+    <link rel="stylesheet" href="css/chat_app.css">
     <title>Profile Information System</title>
-  
 </head>
 <body>
     <div class="container">
-        <h1>Profile Information</h1>
-   <form action="create_profile.php" method="POST" enctype="multipart/form-data">
+        <h1 class="page-title">Profile Information</h1>
+        <form action="create_profile.php" method="POST" enctype="multipart/form-data">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-			<label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required><br><br>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
             <label for="gender">Gender:</label>
             <select id="gender" name="gender" required>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
-            </select><br><br>
-             <label for="state">State:</label>
-            <input type="text" id="state" name="state" required><br><br>
-			  <label for="country">Country:</label>
-            <input type="text" id="country" name="country" required><br><br>
-			 <label for="about">About Me:</label><br>
-            <textarea id="about" name="about" rows="8” maxlength="50000000"></textarea><br><br>
-			 <label for="profile_pic">Profile Picture:</label>
-            <input type="file" id="profile_pic" name="profile_pic"><br><br>
-			 <input type="submit" value="Create Profile">
+            </select>
+            
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+            
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+            
+            <label for="about">About Me:</label>
+            <textarea id="about" name="about"></textarea>
+            
+            <label for="profile_pic">Profile Picture:</label>
+            <input type="file" id="profile_pic" name="profile_pic">
+            
+            <input type="submit" value="Create Profile">
         </form>
     </div>
-
- <!-- Link the JavaScript file -->
     <script src="js/profile_information.js"></script>
 </body>
 </html>
+
 
 			
 
