@@ -599,15 +599,16 @@ select {
     font-size: 18px;
 }
 
-/* Styling for the About Me textarea */
 #about {
-    min-height: 300px; /* Larger text area for better usability */
+    min-height: 500px; /* Increase height significantly */
+    height: 60vh; /* Makes it take up 60% of the viewport height */
     width: 100%;
     resize: vertical; /* Allows user to resize if needed */
     background-color: #dc143c !important;
     color: cyan;
     border: 2px solid limegreen;
-    font-size: 18px;
+    font-size: 24px; /* Larger font size */
+    padding: 15px; /* Extra padding for comfort */
 }
 
 input[type="submit"] {
