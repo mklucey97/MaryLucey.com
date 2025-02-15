@@ -7,6 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$email = $_POST['email'];
 	
 	if (!empty($username) && !empty($password) && !empty($email)) {
+		 // Insert user into database
 
 
 
