@@ -8,6 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
 	if (!empty($username) && !empty($password) && !empty($email)) {
 		 // Insert user into database
+		 $sql = "INSERT INTO signup (username, password, email) VALUES ('$username', '$password', '$email')";
 
 
 
