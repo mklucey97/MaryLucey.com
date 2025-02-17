@@ -11,6 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		 $sql = "INSERT INTO signup (username, password, email) VALUES ('$username', '$password', '$email')";
 		 if ($conn->query($sql) === TRUE) {
 			 echo "Sign up successful. You can now <a href='login.html'>login</a>";
+		 } else {
 
 
 
