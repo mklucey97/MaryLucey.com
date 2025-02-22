@@ -13,6 +13,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			 echo "Sign up successful. You can now <a href='login.html'>login</a>";
 		 } else {
 			 echo "Error: " . $sql . "<br>" . $conn->error;
+			 
+		 }
+    } else {
+        echo "Signup failed. Please try again";
+    }
+}
 
 
 
